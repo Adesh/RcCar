@@ -1,0 +1,68 @@
+/* CSS file placeholder. */
+html,body,a{
+  cursor:crosshair;
+  margin:0px;
+  padding:0px;
+
+}
+
+#remote{
+  padding:0px;
+  margin:0px;
+  border:0px Solid #dedede;
+  width:300px;
+  height:300px;
+}
+#remote #control{
+  font-size:85%;
+  height:100px;
+  width:100px;
+  position:absolute;
+  top:100px;
+  left:100px;
+  background: #2b2b2b;
+  color:white;
+}
+
+select{
+  font-size:85%;  
+   background: #2b2b2b;
+  color:white; 
+}
+
+#remote .btn {
+  font-size:150%;
+  cursor:crosshair;
+  height:100px;
+  width:100px;
+  border:0px;
+  background: #57fa78;
+  color: #ffffff;
+  text-align:center;
+  text-decoration: none;
+}
+
+#remote .btn:hover {
+  text-decoration: none;
+}
+
+#remote #f{
+  position:absolute;
+  top:0px;
+  left:100px;
+}
+#remote #b{
+  position:absolute;
+  top:200px;
+  left:100px;
+}
+#remote #l{
+  position:absolute;
+  left:0px;
+  top:100px;
+}
+#remote #r{
+  position:absolute;
+  left:200px;
+  top:100px;
+}
