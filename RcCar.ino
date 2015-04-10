@@ -33,7 +33,7 @@ void loop() {
   iteration++;
   if(iteration > 150 && state != '0'){
    iteration = 0;
-   state = '0';
+   state = 's';
   }
   //state = '0';
 
