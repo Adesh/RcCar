@@ -66,30 +66,42 @@ function openSelectedPort() {
   var selectedPort = portPicker.options[portPicker.selectedIndex].value;
   chrome.serial.connect(selectedPort, onOpen);
 }
-
+/*
+ w -> forward
+ x -> reverse
+ a -> left
+ d -> right
+ s -> stop
+ 1:9 -> speed
+ */
+	
 function forward() {
   document.getElementById("f").style.backgroundColor = "#57fa78";
   //while_mouse_down = true;
-  writeSerial("1");
+  writeSerial("w");
   //if(while_mouse_down === true) forward();
 }
 function backward() {
   document.getElementById("b").style.backgroundColor = "#57fa78";
-  //while_mouse_down = true;
-  writeSerial("2");
+  //while_mouse_dowsn = true;
+  writeSerial("x");
   //if(while_mouse_down === true) backward(); 
 }
 function left() {
   document.getElementById("l").style.backgroundColor = "#57fa78";
   //while_mouse_down = true;
-   writeSerial("3");
+   writeSerial("a");
   //if(while_mouse_down === true) left();
 }
 function right() {
   document.getElementById("r").style.backgroundColor = "#57fa78";
   //while_mouse_down = true;
-  writeSerial("4");
-  
+  writeSerial("d"); 
+}
+
+function setSpeed() {
+    var x = document.getElementById("speedometer").step;
+    writeSerial("x");
 }
 
 function mouseUp() {
@@ -121,11 +133,14 @@ function convertStringToArrayBuffer(str) {
 window.onload = function() {
   //document.querySelector('#greeting').innerText ='Hello, World! It is ' + new Date();
   mouseUp();
-  
+
   chrome.serial.getDevices(function(ports) {
     buildPortPicker(ports);
     openSelectedPort();
   });
+  
+  //document.getElementById("speedometer").step = "9";
+  //setSpeed();
   
   document.getElementById("f").onmousedown=function(){forward();};
   document.getElementById("b").onmousedown=function(){backward();};
