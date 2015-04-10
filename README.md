@@ -19,11 +19,10 @@ Chrome app has been developed to controll RC car using Bluetooth serial port.
 Car remote (Android App) detail:  
 to be developed in future
 
-pending development : speed control, auto obstacle avoidance, android app
-
 Command to control car:
-0 - stop
-1 - forward
-2 - backward
-3 - left
-4 - right
+ w -> forward
+ x -> reverse
+ a -> left
+ d -> right
+ s -> stop
+ 1:9 -> speed (default speed -> full throttle -> 9)
