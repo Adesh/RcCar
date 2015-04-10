@@ -3,7 +3,7 @@ html,body,a{
   cursor:crosshair;
   margin:0px;
   padding:0px;
-
+background: #222;
 }
 
 #remote{
@@ -13,15 +13,17 @@ html,body,a{
   width:300px;
   height:300px;
 }
+
 #remote #control{
   font-size:85%;
-  height:100px;
-  width:100px;
+  height:150px;
+  width:150px;
   position:absolute;
-  top:100px;
-  left:100px;
+  top:175px;
+  left:175px;
   background: #2b2b2b;
   color:white;
+  border-radius: 10px 10px 10px 10px;
 }
 
 select{
@@ -33,8 +35,8 @@ select{
 #remote .btn {
   font-size:150%;
   cursor:crosshair;
-  height:100px;
-  width:100px;
+  height:150px;
+  width:150px;
   border:0px;
   background: #57fa78;
   color: #ffffff;
@@ -49,20 +51,24 @@ select{
 #remote #f{
   position:absolute;
   top:0px;
-  left:100px;
+  left:175px;
+  border-radius: 87px 87px 0px 0px;
 }
 #remote #b{
   position:absolute;
-  top:200px;
-  left:100px;
+  bottom:0px;
+  left:175px;
+  border-radius: 0px 0px 87px 87px;
 }
 #remote #l{
   position:absolute;
   left:0px;
-  top:100px;
+  top:175px;
+  border-radius: 87px 0px 0px 87px;
 }
 #remote #r{
   position:absolute;
-  left:200px;
-  top:100px;
+  right:0px;
+  top:175px;
+  border-radius: 0px 87px 87px 0px;
 }
