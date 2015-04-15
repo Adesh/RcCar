@@ -31,9 +31,12 @@ void setup() {
 
 void loop() {
   iteration++;
-  if(iteration > 150 && state != '0'){
+  if(iteration > 150 && state != 's'){
    iteration = 0;
-   state = 's';
+   set_speed(0);
+  }
+  else{
+   set_speed(s_speed);
   }
   //state = '0';
 
